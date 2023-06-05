@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<title> Abstract Submission and Registration</title>
+		<style type="text/css">
+			
+			#main h2
+			{
+				margin-left: 1%;
+			}
+			#main p
+			{
+				margin-left: 1% ;
+				font-size: 20px;
+			}
+			a
+		{
+			
+			font-size: 19px;
+		}
+		
+		</style>
+	</head>
+	<body  style="background-color: rgb(29,23,10);">
+		<div class="container-fluid mx-auto" style="height: 10%">
+			<a href="https://en.wikipedia.org/wiki/Islamia_College_University" >
+				<img src="PS2Islamia_College_Peshawar,_Pakistan.png" class="img-fluid img-thumbnail" style="height: 430px; width: 100% ; margin-top: 2% ; margin-bottom: 3%">
+			</a>
+		</div>
+		<div class="container  " >
+			<ul class="nav nav-tabs ">
+				<li class="nav-item">
+					<a  class="nav-link " href="index.html">Home</a></li>
+					<li class="nav-item">
+						<a  class="nav-link" href="Aims.html">Aims & venue</a></li>
+						<li class="nav-item">
+							<a  class="nav-link " href="scope.html">Scope</a></li>
+							
+							<li class="nav-item">
+								<a  class="nav-link active" href="Abstract.html">Abstract Submission & registration</a></li>
+								
+								<li class="nav-item " >
+									<a  class="nav-link" href="natspeakers.html">Invited Speakers</a>
+								</li>
+								<li class="nav-item">
+									<a  class="nav-link " href="organizers.html">Organizers</a></li>
+									<li class="nav-item">
+										<a  class="nav-link" href="contacts.html">Contacts</a></li>
+										
+									</ul>
+								</div>
+								<br>
+								<br>
+								<div class="container">
+									<table  style="width: 100% ; background-color: white" >
+										<tr>
+											<td>
+												<center>
+												
+												<div id="body">
+													<a href="Docs\Registration Form.docx"  style="color: green">
+														Get <mark>Registration</mark> form here
+													</a>
+													<span class="badge badge-pill badge-success"> new</span>
+													
+												</div>
+												</center>
+											</td>
+										</tr>
+									</table>
+									<br>
+									<table style="width: 100% ; background-color: white ; margin-bottom: 2% ;" >
+										<tr>
+											<td>
+												<center>
+												
+												<div id="body">
+													<a href="Docs\Brochure.pdf"  target="new" style="color: green">
+														Get <MARK>Brochure</MARK> from here
+													</a>
+													<span class="badge badge-pill badge-success"> new</span>
+												</div>
+												</center>
+											</td>
+										</tr>
+									</table>
+									<table style="width: 100% ; background-color: white ; margin-bottom: 4% ;" >
+										<tr>
+											<td>
+												<center>
+												
+												<div id="body">
+													<a href="Docs\Flyer_Poster.pdf"  target="new" style="color: green">
+														Get <MARK>Poster</MARK> from here
+													</a>
+													<span class="badge badge-pill badge-success"> new</span>
+												</div>
+												</center>
+											</td>
+										</tr>
+									</table>
+									<div class="mx-auto mb-5 ">
+										<center>
+										<button type="submite" class="btn btn-success w-25 mr-5" data-toggle="modal" data-target="#loginModel">Login</button>
+										<button type="submite" class="btn btn-danger w-25 " data-toggle="modal" data-target="#signUpModel">Sign Up</button>
+										</center>
+									</div>
+									<div>
+										<!-- Modal -->
+										<div id="loginModel" class="modal fade " role="dialog">
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content bg-dark text-light">
+													<div class="modal-header">
+														
+														<h4 class="modal-title">Login</h4>
+														<button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+													</div>
+													<div class="modal-body">
+														<form action="#action.php" method="get" accept-charset="utf-8">
+															<form action="/action_page.php">
+																<div class="form-group">
+																	<label for="email">Email address:</label>
+																	<input type="email" class="form-control" id="email">
+																</div>
+																<div class="form-group">
+																	<label for="pwd">Password:</label>
+																	<input type="password" class="form-control" id="pwd">
+																</div>
+																<div class="checkbox">
+																	<label><input type="checkbox"> Remember me</label>
+																</div>
+																<button type="submit" class="btn btn-success" onclick="funLogin()" >Login</button>
+																<script type="text/javascript">
+																	function funLogin()
+																	{
+																		var email = document.getElementById('email').value ;
+																		var password = document.getElementById('pwd').value ;
+																		if (email == "" && password == "")
+																		{
+																			alert("email and password cant be empty");
+																		}
+																		else if (email == "")
+																		{
+																			alert("email cant be empty");
+																		}
+																		else if (email.indexOf("@") <=2 )
+																		{
+																			alert("invalid Email");
+																		}
+																		else if ((email.charAt(email.length -4)!='.') &&  (email.charAt(email.length -4)!='.'))
+																		{
+																			alert("invalid email");
+																		}
+																		if (password== "")
+																		{
+																			alert("password cant be empty");
+																		}
+																		
+																		else if (password.length <8)
+																		{
+																			alert("Password length is not satiesfied ");
+																											}
+																							
+																</script>
+															</form>
+															
+															
+															
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											
+										</div>
+										
+									</div>
+									<div>
+										<!-- Modal -->
+										<div id="signUpModel" class="modal fade " role="dialog">
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content bg-dark text-light">
+													<div class="modal-header">
+														
+														<h4 class="modal-title">Sign Up</h4>
+														<button type="button" class="close btn-danger" data-dismiss="modal">&times;</button>
+													</div>
+													<div class="modal-body">
+														<form action="#action.php" method="get" accept-charset="utf-8">
+															<form action="/action_page.php">
+																<div class="form-group">
+																	<label for="user name">User Name:</label>
+																	<input type="text" class="form-control" id="uName">
+																</div>
+																<div class="form-group">
+																	<label for="email">Email address:</label>
+																	<input type="email" class="form-control" id="2ndemail">
+																</div>
+																<div class="form-group">
+																	<label for="pwd">Password:</label>
+																	<input type="password" class="form-control" id="2ndpwd">
+																</div>
+																<div class="form-group">
+																	<label for="pwd">Confirm Password:</label>
+																	<input type="password" class="form-control" id="confpwd">
+																</div>
+																<div class="form-group">
+																	<label for="Phone">Phone Number:</label>
+																	<input type="text" class="form-control" id="phone">
+																</div>
+																<div class="checkbox">
+																	<label><input type="checkbox"> Remember me</label>
+																</div>
+																<button type="submit" class="btn btn-success" onclick="funSignUp()" >Login</button>
+
+
+																<script type="text/javascript">
+																	function funSignUp()
+																	{
+																		var uname = document.getElementById('uName').value ;
+																		var email = document.getElementById('2ndemail').value ;
+																		var password = document.getElementById('2ndpwd').value ;
+																		var confPassword = document.getElementById('confpwd').value ;
+																		var phone = document.getElementById('phone').value ;
+
+
+																		if (unmae==""  &&   email==""  &&  password=="" &&  confPassword=="" &&  phone=="")
+																		{
+																			alert("a")
+																			
+																		}   
+																		
+																		else if (email.indexOf("@") <=2 )
+																		{
+																			alert("invalid Email");
+																		}
+																		else if ((email.charAt(email.length -4)!='.') &&  (email.charAt(email.length -4)!='.'))
+																		{
+																			alert("invalid email");
+																		}
+																		if (password != confPassword)
+																		{
+																			alert("password do not match");
+																		}
+																		
+																		else if (password.length <8)
+																		{
+																			alert("Password length is not satiesfied ");
+																											}
+																	}
+																	</script>
+																		
+															</form>
+															
+															
+															
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="container border  mb-5"  style="border-radius: 10px ;background-color: lightgrey ; text-align: justify ; ">
+											<table  id="main" style="width: 100% ; margin-bottom: 3%" >
+												<tr>
+													<td style=" background-color: lightgrey ; width: 97%">
+														<h2  style="margin-top: 2%">Abstract submission</h2>
+														<p >
+															Thank you very much for your interest in the <strong>NCC 2020</strong> and submission of Abstract
+															to the conference. Please prepare your abstract for oral and poster presentation as
+															MS Word file, underline the name of the presenting author and send us along the
+															registration form on the following email address: <mark> icc2019@icp.edu.pk </mark>.The
+															receiving
+															of your abstract will be acknowledged immediately, and you will be informed about
+														the status of your abstract after technical evaluation by peer reviewers. </p>
+														<center>
+														<h3>	Key deadlines
+														</h3>
+														<table class="table table-bordered table-dark table-hover" style="width: 40% ; margin-bottom: 3% ;">
+															
+															<tr>
+																<td>Abstract submission opens </td>
+																<td>15.09.2019</td>
+															</tr>
+															<tr>
+																<td>Abstract Submission Deadline </td>
+																<td>14.02.2020</td>
+															</tr>
+															<tr>
+																<td>Abstract decision notification </td>
+																<td>After the technical evaluations</td>
+															</tr>
+															<tr>
+																<td>Registration Deadline </td>
+																<td>01.03.2020</td>
+															</tr>
+														</table>
+														</center>
+														<h2>Registration</h2>
+														<p>For registration please fill in the (<a href="Docs\Registration Form.docx"  style="color: green ; font-size: 20px">
+															registration form )
+														</a> and send on the
+													following email address:<mark>icc2019@icp.edu.pk</mark></p>
+													<center>
+													<H3>Registration Fee*</H3>
+													<table class="table table-bordered table-dark table-hover" style="width: 40%">
+														
+														<tr>
+															<td><b>Participants </td></b>
+															<td><b>Fee</td></b>
+														</tr>
+														<tr>
+															<td>Students </td>
+															<td>Pak Rs. 1500/-</td>
+														</tr>
+														<tr>
+															<td>Faculty Members/Scientists </td>
+															<td>Pak Rs. 3000/-</td>
+														</tr>
+														<tr>
+															<td>Persons from Industries  </td>
+															<td>Pak Rs. 4500/-</td>
+														</tr>
+														
+													</table>
+													</center>
+													<p style="margin-top: 3%;">
+														*Registration fee includes workshop materials, lunch and refreshments during
+														tea/coffee breaks.Registration fee can be paid as demand draft in the name of
+														Chief Organizer of the workshop, Department of Chemistry, Islamia College
+													Peshawar, or online. </pre>
+													<h2>Accommodation & Transport</h2>
+													<p>Accommodation upon request will be provided on self payment basis to the
+														delegates in different guest houses of the University and hotels, if deemed necessary.
+														The accommodation will be arranged at preferential rates, particularly for the
+														student participants. The pick and drop from/to accommodation to/from
+													conference venue is included in the complementary services from the organizers.</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</body>
+							</html>
